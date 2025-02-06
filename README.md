@@ -6,13 +6,11 @@ Step into the Red Team Grimoire, a tome of digital witchcraft where dark magic m
 ## 🔮 Contents of the Grimoire 🔮
 🕯️ TGTConjuring – Summon the phantom of Kerberos to bypass authentication.
 
-🪞 NecroMirror – Reflect and preserve the shadow essence of the system.
+👁️‍🗨️ NecroMirror – Reflect and preserve the shadow essence of the system.
 
 🩸 SoulDumper – Rip the spirit from LSASS and claim its secrets.
 
 
-
-
 These spells are tools of the trade for the cunning and the daring. Wield them wisely, for power without caution invites ruin.
 
-✨ May your exploits be as elusive as the whispers of the void ✨
+✨ *May your exploits be as elusive as the whispers of the void* ✨
