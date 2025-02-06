@@ -4,7 +4,7 @@
     Description: This script lets you dump SAM, SECURITY, SYSTEM, SOFTWARE without using Rubeus or Mimikatz.
                  It creates a shadow copy of C: and copies the files to C:\Windows\Tasks, then compresses them into a ZIP archive.
                  Warning: it needs Administrator privileges.
-    Usage: .\ShadowDumper.ps1
+    Usage: .\NecroMirror.ps1
 #>
 
 # Get current user
