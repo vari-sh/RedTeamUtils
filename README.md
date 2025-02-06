@@ -6,7 +6,7 @@ Step into the Red Team Grimoire, a tome of digital witchcraft where dark magic m
 ## 🔮 Contents of the Grimoire 🔮
 🕯️ TGTConjuring – Summon the phantom of Kerberos to bypass authentication by injecting someone else's essence into your soul.
 
-👁️‍🗨️ NecroMirror – Reflect the shadow essence of the system and steal SAM, SECURITY, SOFTWARE and SYSTEM from the shadow world.
+🧟 NecroMirror – Reflect the shadow essence of the system and steal SAM, SECURITY, SOFTWARE and SYSTEM from the shadow world.
 
 🩸 SoulDumper – Rip the spirit from LSASS and claim its secrets.
 
