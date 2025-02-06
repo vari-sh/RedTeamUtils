@@ -10,6 +10,7 @@ Step into the Red Team Grimoire, a tome of digital witchcraft where dark magic m
 
 🩸 SoulDumper – Rip the spirit from LSASS and claim its secrets.
 
+----------------------------------------------------------------------
 
 These spells are tools of the trade for the cunning and the daring. Wield them wisely, for power without caution invites ruin.
 
