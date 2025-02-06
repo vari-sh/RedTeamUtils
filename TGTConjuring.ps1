@@ -4,7 +4,7 @@
 
     Description: This script let you import your Kirbi Tickets in your Kerberos Cache without using Rubeus or Mimikatz.
                   If you have a dc.ccache instead you can use impacket 'python3 ticketConverter.py ticket.ccache ticket.kirbi'.
-    Usage: .\TGTInjector.ps1 ticket.kirbi
+    Usage: .\TGTConjuring.ps1 ticket.kirbi
 #>
 
 param (
