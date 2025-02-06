@@ -5,7 +5,7 @@
     Description: This script let you dump LSASS process.
                   Warning: it needs Administrator privileges
                   Part of the code came from Offsec courses
-    Usage: .\LSASSDumper.ps1
+    Usage: .\SoulDumper.ps1
 #>
 
 Add-Type -TypeDefinition @"
