@@ -3,12 +3,12 @@ A forbidden collection of Red Team sorcery
 
 Step into the Red Team Grimoire, a tome of digital witchcraft where dark magic meets cybersecurity. Here, you’ll find arcane spells and forbidden rituals designed to manipulate the fabric of enterprise defenses. Each incantation has been meticulously crafted and tested in the shadows of real-world assessments.
 
-## 🔮 Contents of the Grimoire
-🪄 TGTConjuring – Summon the phantom of Kerberos to bypass authentication.
+## 🔮 Contents of the Grimoire 🔮
+🕯️ TGTConjuring – Summon the phantom of Kerberos to bypass authentication.
 
-🔮 NecroMirror – Reflect and preserve the shadow essence of the system.
+🪞 NecroMirror – Reflect and preserve the shadow essence of the system.
 
-💀 SoulDumper – Rip the spirit from LSASS and claim its secrets.
+🩸 SoulDumper – Rip the spirit from LSASS and claim its secrets.
 
 
 
